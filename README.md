@@ -24,20 +24,22 @@
 
 ## 5. Clone the repository:
 - Setup and Installation Guide
- ```bash
-mkdir repos
-cd repos/
-git clone https://github.com/rafsan-jany/spring-boot-rest-api-h2-database.git
-cd spring-boot-rest-api-h2-database  
+- ```bash
+  mkdir repos
+  cd repos/
+  git clone https://github.com/rafsan-jany/spring-boot-rest-api-h2-database.git
+  cd spring-boot-rest-api-h2-database  
 
 ## 6. Install Required Software :
-- sudo apt update  
-- sudo apt install openjdk-8-jdk -y  
-- sudo apt install maven -y  
-- java --version  
-- mvn --version  
+- ```bash
+  sudo apt update  
+  sudo apt install openjdk-8-jdk -y  
+  sudo apt install maven -y  
 
-## Add MySQL Dependency  
+  java --version  
+  mvn --version  
+
+## 7. Add MySQL Dependency  
 - Add the following MySQL dependency to pom.xml:  
   <dependency>  
       <groupId>mysql</groupId>  
@@ -45,7 +47,7 @@ cd spring-boot-rest-api-h2-database
       <version>5.1.49</version>  <!-- Update the version if needed -->  
   </dependency>  
 
-## Modify Mockito Dependency  
+## 8. Modify Mockito Dependency  
 - Remove the <scope>test</scope> tag from the Mockito dependency in pom.xml:  
   <dependency>  
       <groupId>org.mockito</groupId>  
@@ -53,38 +55,43 @@ cd spring-boot-rest-api-h2-database
       <!-- Remove this line: <scope>test</scope> -->  
   </dependency>  
 
-## Configure application.properties  
+## 9. Configure application.properties  
 - Add the following entries to src/main/resources/application.properties:  
   spring.jpa.database-platform=org.hibernate.dialect.MySQL5Dialect  
   spring.jpa.hibernate.ddl-auto=create  
   spring.datasource.username=root  
   spring.datasource.password=root  
 
-## Install and Configure MySQL  
-- sudo apt install mysql-server  
-- sudo service mysql status  
-- sudo mysql_secure_installation  
-  - Validate Password component? No  
-  - Remove anonymous users? No  
-  - Disallow root login remotely? No  
-  - Remove test database and access to it? No  
-  - Reload privilege tables now? Yes  
+## 10. Install and Configure MySQL  
+- ```bash
+  sudo apt install mysql-server  
+  sudo service mysql status  
+  sudo mysql_secure_installation  
 
-## Update MySQL Root User  
-- sudo mysql  
-- ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';  
-- EXIT;  
+- Validate Password component? No  
+- Remove anonymous users? No  
+- Disallow root login remotely? No  
+- Remove test database and access to it? No  
+- Reload privilege tables now? Yes  
 
-## Create Database  
-- mysql -h localhost -u root -p  
+## 11. Update MySQL Root User
+- ```bash
+  sudo mysql  
+  ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';  
+  EXIT;  
+
+## 12. Create Database 
+- ```bash
+  mysql -h localhost -u root -p  
 - Enter the password: root.  
 - CREATE DATABASE shipwreck;  
 
-## Build and Run the Application  
-- mvn clean install -DskipTests  
-- mvn spring-boot:run  
+## 13. Build and Run the Application  
+- ```bash
+  mvn clean install -DskipTests  
+  mvn spring-boot:run  
 
-## Access the Application  
+## 14. Access the Application  
 - Open your browser and navigate to:  
   http://54.160.65.98:8181/index.html#/  
 - Ensure that the security group for your EC2 instance allows inbound traffic on port 8181.  
