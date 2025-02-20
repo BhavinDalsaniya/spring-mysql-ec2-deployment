@@ -1,6 +1,5 @@
 # spring-mysql-ec2-deployment
-
-# Steps to Set Up and Deploy the Spring Boot Application with MySQL
+- Steps to Set Up and Deploy the Spring Boot Application with MySQL
 
 ## 1. Create a VPC and Subnet
 - Create a VPC in any one region with the CIDR block `10.0.0.0/16`.
