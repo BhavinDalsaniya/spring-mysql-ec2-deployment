@@ -39,7 +39,8 @@
   mvn --version  
 
 ## 7. Add MySQL Dependency  
-- Add the following MySQL dependency to pom.xml:  
+- Add the following MySQL dependency to pom.xml:
+- ```xml 
   <dependency>  
       <groupId>mysql</groupId>  
       <artifactId>mysql-connector-java</artifactId>  
@@ -47,7 +48,8 @@
   </dependency>  
 
 ## 8. Modify Mockito Dependency  
-- Remove the <scope>test</scope> tag from the Mockito dependency in pom.xml:  
+- Remove the <scope>test</scope> tag from the Mockito dependency in pom.xml:
+- ```xml
   <dependency>  
       <groupId>org.mockito</groupId>  
       <artifactId>mockito-core</artifactId>  
