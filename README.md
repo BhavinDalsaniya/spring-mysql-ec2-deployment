@@ -57,7 +57,8 @@
   </dependency>  
 
 ## 9. Configure application.properties  
-- Add the following entries to src/main/resources/application.properties:  
+- Add the following entries to src/main/resources/application.properties:
+- ```bash
   spring.jpa.database-platform=org.hibernate.dialect.MySQL5Dialect  
   spring.jpa.hibernate.ddl-auto=create  
   spring.datasource.username=root  
