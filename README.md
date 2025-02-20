@@ -79,14 +79,14 @@
 ## 11. Update MySQL Root User
 - ```bash
   sudo mysql  
-  ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';  
-  EXIT;  
+  mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';  
+  mysql> EXIT;  
 
 ## 12. Create Database 
 - ```bash
   mysql -h localhost -u root -p  
 - Enter the password: root.  
-- CREATE DATABASE shipwreck;  
+- mysql> CREATE DATABASE shipwreck;  
 
 ## 13. Build and Run the Application  
 - ```bash
