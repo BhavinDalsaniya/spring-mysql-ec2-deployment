@@ -23,13 +23,14 @@
   ssh -i first-ec2.pem ubuntu@54.88.58.168
 
 ## 5. Clone the repository:
-- Setup and Installation Guide  
-- mkdir repos  
-- cd repos/  
-- git clone https://github.com/rafsan-jany/spring-boot-rest-api-h2-database.git  
-- cd spring-boot-rest-api-h2-database  
+- Setup and Installation Guide
+ ```bash
+mkdir repos
+cd repos/
+git clone https://github.com/rafsan-jany/spring-boot-rest-api-h2-database.git
+cd spring-boot-rest-api-h2-database  
 
-## Install Required Software  
+## 6. Install Required Software :
 - sudo apt update  
 - sudo apt install openjdk-8-jdk -y  
 - sudo apt install maven -y  
