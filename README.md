@@ -26,8 +26,8 @@
 - ```bash
   mkdir repos
   cd repos/
-  git clone https://github.com/rafsan-jany/spring-boot-rest-api-h2-database.git
-  cd spring-boot-rest-api-h2-database  
+  git clone https://github.com/Arkhypov/Spring-boot-app-Shipwreck.git
+  cd Spring-boot-app-Shipwreck  
 
 ## 6. Install Required Software :
 - ```bash
